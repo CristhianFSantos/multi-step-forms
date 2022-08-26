@@ -32,4 +32,8 @@ export class FormContainerComponent implements OnInit {
   getStep2Form(): FormGroup {
     return this.form.get('step2') as FormGroup;
   }
+
+  clearForm(): void {
+    this.form.reset();
+  }
 }
