@@ -1,1 +1,12 @@
-<p>form-container-step2 works!</p>
+<form [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Address</mat-label>
+    <input matInput placeholder="Ex. Rua A..." formControlName="address" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Country</mat-label>
+    <input matInput placeholder="Ex. Brasil" formControlName="country" />
+  </mat-form-field>
+  <button mat-raised-button routerLink="../step1" color="accent">Back</button>
+  <button mat-raised-button (click)="submit()" color="primary">Send</button>
+</form>

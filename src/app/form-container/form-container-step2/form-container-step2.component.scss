@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;   
+
+    button,mat-form-field {
+        width: 100%;
+    }
+
+    button{
+        margin-bottom: 10px;
+    }
+}
